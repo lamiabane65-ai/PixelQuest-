@@ -40,5 +40,64 @@
       </ul>
     </nav>
   </aside>
+
+   <!-- ============================
+       HERO + BARRE DE FILTRES + GRILLE DES JEUX
+       Branche : hero, filtres, grille
+  ============================ -->
+  <section class="w-[95%] mx-auto my-8">
+    <div class="flex flex-col md:flex-row gap-4">
+
+      <!-- ============================
+           FILTRES
+           Branche : filtres
+      ============================ -->
+      <aside class="hidden md:flex md:flex-col md:w-1/4 bg-[#0D062F] rounded-3xl p-6 gap-6 h-auto">
+        <h2 class="text-white text-xl font-bold">Filtres</h2>
+
+        <div>
+          <h3 class="text-[#7826AB] font-bold mb-2">Par plateforme</h3>
+          <div class="flex flex-col gap-2">
+            <label class="flex items-center text-white"><input type="checkbox" class="platform-filter mr-2" value="PC">PC</label>
+            <label class="flex items-center text-white"><input type="checkbox" class="platform-filter mr-2" value="PlayStation">PlayStation</label>
+            <label class="flex items-center text-white"><input type="checkbox" class="platform-filter mr-2" value="Xbox">Xbox</label>
+            <label class="flex items-center text-white"><input type="checkbox" class="platform-filter mr-2" value="Switch">Switch</label>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-[#7826AB] font-bold mb-2">Par genre</h3>
+          <div class="flex flex-col gap-2">
+            <label class="flex items-center text-white"><input type="checkbox" class="genre-filter mr-2" value="Action">Action</label>
+            <label class="flex items-center text-white"><input type="checkbox" class="genre-filter mr-2" value="RPG">RPG</label>
+            <label class="flex items-center text-white"><input type="checkbox" class="genre-filter mr-2" value="Simulation">Simulation</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ============================
+           HERO
+           Branche : hero
+      ============================ -->
+      <div class="w-full md:w-3/4 flex flex-col gap-6">
+        <div class="relative rounded-3xl overflow-hidden">
+          <img src="images/hero section.jpeg" alt="Hero" class="w-full h-[250px] md:h-[400px] object-cover rounded-3xl">
+          <div class="absolute bottom-6 left-6">
+            <a href="#" class="bg-[#005B96] px-8 py-3 rounded-full shadow-lg hover:bg-[#0073b3] transition font-bold text-white text-lg">
+              Explorer
+            </a>
+          </div>
+        </div>
+
+        <!-- ============================
+             GRILLE DES JEUX
+             Branche : grille
+        ============================ -->
+        <div id="gamesGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Les cartes seront injectées ici par JS -->
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
